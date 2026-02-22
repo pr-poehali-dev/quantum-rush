@@ -1,0 +1,1 @@
+CREATE TABLE t_p2751751_quantum_rush.stories (id SERIAL PRIMARY KEY, user_id INTEGER REFERENCES t_p2751751_quantum_rush.users(id), content_url TEXT, text TEXT, expires_at TIMESTAMP DEFAULT NOW() + INTERVAL '24 hours', created_at TIMESTAMP DEFAULT NOW());

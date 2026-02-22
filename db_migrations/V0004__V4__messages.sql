@@ -1,0 +1,1 @@
+CREATE TABLE t_p2751751_quantum_rush.messages (id SERIAL PRIMARY KEY, channel_id INTEGER REFERENCES t_p2751751_quantum_rush.channels(id), user_id INTEGER REFERENCES t_p2751751_quantum_rush.users(id), text TEXT NOT NULL, file_url TEXT, file_type VARCHAR(50), created_at TIMESTAMP DEFAULT NOW());

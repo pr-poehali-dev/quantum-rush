@@ -1,0 +1,1 @@
+CREATE TABLE t_p2751751_quantum_rush.sessions (id SERIAL PRIMARY KEY, user_id INTEGER REFERENCES t_p2751751_quantum_rush.users(id), token VARCHAR(255) UNIQUE NOT NULL, created_at TIMESTAMP DEFAULT NOW(), expires_at TIMESTAMP DEFAULT NOW() + INTERVAL '30 days');

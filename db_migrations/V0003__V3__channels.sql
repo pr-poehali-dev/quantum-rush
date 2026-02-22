@@ -1,0 +1,1 @@
+CREATE TABLE t_p2751751_quantum_rush.channels (id SERIAL PRIMARY KEY, name VARCHAR(100) NOT NULL, slug VARCHAR(100) UNIQUE NOT NULL, type VARCHAR(20) DEFAULT 'text', description TEXT, created_by INTEGER REFERENCES t_p2751751_quantum_rush.users(id), created_at TIMESTAMP DEFAULT NOW());
